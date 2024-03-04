@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <!-- 
+        table ==> to create a table
+        border
+
+        caption ==> like a title of the table. 
+        header ==> <thead>
+        body ==> <tbody>
+        footer ==> <tfoot>
+
+        tr ==> rows of table
+        th ==> heading cell of table 
+        td ==> table data
+
+        colspan
+        rowspan
+
+        cellspacing
+        cellpadding
+
+        To make text in center of cell ==> align="center" valign="middle"
+     -->
+
+    <table border="1" cellspacing="0" cellpadding="5">
+        <caption>Marks of a student</caption>
+        <thead>
+            <tr align="center" vaign="middle">
+                <th>Subject</th>
+                <th>obtained marks</th>
+                <th>Total marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="center" valign="middle">
+                <td>Telugu</td>
+                <td>80</td>
+                <td>100</td>
+            </tr>
+            <tr align="center" valign="middle">
+                <td>Hindi</td>
+                <td>70</td>
+                <td>100</td>
+            </tr>
+            <tr align="center" valign="middle">
+                <td>English</td>
+                <td>85</td>
+                <td>100</td>
+            </tr>
+            <tr align="center" valign="middle">
+                <td>Maths</td>
+                <td>90</td>
+                <td>100</td>
+            </tr>
+            <tr align="center" valign="middle">
+                <td>Science</td>
+                <td>90</td>
+                <td>100</td>
+            </tr>
+            <tr align="center" valign="middle">
+                <td>Social</td>
+                <td>60</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br> 
+
+    <table border="1" cellspacing="0" cellpadding="50">
+      <caption>
+        Details of a student
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="2">Roll No.</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2">12345</td>
+          <td>Sateesh</td>
+          <td>25</td>
+        </tr>
+
+        <tr>
+          <td>300</td>
+          <td>Sai</td>
+          <td>27</td>
+        </tr>
+
+        <tr>
+          <td>400</td>
+          <td>Kumar</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+  </body>
+</html>
