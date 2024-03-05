@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTI MEDIA</title>
+</head>
+<body>
+    <!-- Image tag -->
+    <div>
+        <h4>Multi Media are as follows: Images, Audio, Video, and Animations. The multi Media tags are inline elements. </h4>
+        <h1>Showing an image</h1>
+        <img src="./assets/dog.jpg" alt="Dog_Image">
+    
+        <p>Showing the image with height & width attributes</p>
+        <img src="./assets/dog.jpg" alt="Dog_Image" width="500px" height="250px">    
+        
+        <p>If we give the width attribute as 100% then it will be responsive means the image viusually resized based on the screen size.</p>
+        <img src="./assets/dog.jpg" alt="Dog_Image" width="100%">    
+    
+    
+        <p>Image as a link:</p>
+        <a href="https://internetingishard.netlify.app/">
+            <img src="./assets/dog.jpg" alt="Image as a link" width="300px" height="150px" >
+        </a>
+    </div>
+
+    <br>
+
+
+
+    <!-- audio tag can be made in 2 ways using src attribut or source tag -->
+    <div>
+        <h1>Audio</h1>
+        <audio src="https://www2.cs.uic.edu/~i101/SoundFiles/StarWars3.wav"></audio>
+        <audio>
+            <source src="https://www2.cs.uic.edu/~i101/SoundFiles/StarWars3.wav">
+        </audio>
+
+        <!-- to represent these two in web page -->
+        &lt; &gt; <br>
+        &lt; &gt;
+        
+        <p>Above, we provided 2 audio tags. Even though we have the audio tag with source, it is not visible in the browser. Audio will be visible when we added 'controls' attribute along with source.</p>
+
+        <audio src="https://www2.cs.uic.edu/~i101/SoundFiles/StarWars3.wav" controls></audio>
+        <audio src="https://www2.cs.uic.edu/~i101/SoundFiles/StarWars3.wav" controls loop muted autoplay type="audio/mpeg" ></audio>
+
+    </div>
+
+    <br> 
+
+
+
+    <!-- video tag -->
+    <div>
+        <h1>Video</h1>
+        <video src="https://player.vimeo.com/external/372335193.sd.mp4?s=80151fa22b2eba81883c8641f2c9e493762c7357&profile_id=164&oauth2_token_id=57447761"></video>
+        <br><br>
+        <video> 
+            <source src="https://player.vimeo.com/external/372335193.sd.mp4?s=80151fa22b2eba81883c8641f2c9e493762c7357&profile_id=164&oauth2_token_id=57447761">
+        </video>
+
+        <p>Like audios, Video tag without controls attribute looks like an image only.</p>
+        <video src="https://player.vimeo.com/external/372335193.sd.mp4?s=80151fa22b2eba81883c8641f2c9e493762c7357&profile_id=164&oauth2_token_id=57447761" width="500px" height="500px" controls loop autoplay muted></video>
+    </div>
+
+    <h3>Adding thumbnail to an image</h3>
+    <p>if you want to add a thumbnail to the video, use the poster attribute, if autoplay is added, the poster won't be visible.</p>
+    <video src="https://player.vimeo.com/external/372335193.sd.mp4?s=80151fa22b2eba81883c8641f2c9e493762c7357&profile_id=164&oauth2_token_id=57447761" width="500px" height="500px" controls poster="https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=400"></video>
+</body>
+</html>
