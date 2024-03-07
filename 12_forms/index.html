@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact details form</title>
+</head>
+<body>
+
+    <h1>Enter your details here:</h1>
+    
+    <form>
+        <!-- 
+            to take data from user, we have input tag along with type attribute. 
+            Even without providing the type attribute, it also works and By default, it have 30 characters capacity 
+        
+            label tag provides a label for the input. It has a for attribute.
+
+            To bind the label & input together to say they are related, we should provide the for attribute & the id attribute of input same. due to this, on clicking the label text itself toggles to the input feild.
+       
+            
+            value attribute:
+                The value attribute specifies the value to be sent to a server when a form is submitted. if we want to add initial / by default value in input tag, we use value attribute.
+                we can remove and add new things.
+                value works for all the inputs
+
+                value="sateesh"
+
+        -->
+
+
+        <label for="fname">First Name:</label>
+        <br>
+        <input type="text" id="fname" name="firstName">
+        
+
+        <br><br>
+        
+
+        <label for="lname">Sur Name:</label>
+        <br>
+        <input type="text" id="lname" name="lastName">  
+        <!-- will get the url like:
+            http://127.0.0.1:3000/index.html?firstName=SATEESH&lastName=BAPANAPALLI
+        -->
+
+        <br><br>
+        
+
+        <label for="age">Age:</label>
+        <br>
+        <input type="number" id="age">  
+        
+
+        <br><br>
+        
+
+        <label for="dob">Date of Birth:</label>
+        <br>
+        <input type="date" id="dob">     <!--To get the calender-->
+
+
+        <br><br>
+
+
+        <label for="mail">Email:</label>
+        <br>
+        <input type="email" id="mail">
+        
+        
+        <br><br>
+        
+        
+        <label for="psd">Password:</label>
+        <br>
+        <input type="password" id="psd">
+
+
+        <br><br>
+
+
+        <!-- to select a single choice from the group of items
+            to get this, we have additionally provide name attribute same for all inputs of radio. if name was differently provided then we can selct all those differently provided.
+        
+            if we click on the label text itself, it toggles to the radio. So to do this, we need to provide for attribute inside label tag & id attribute inside the input.
+            for attribute & id attribute should be same. 
+        -->
+
+        <p>Enter your TShirt size: </p>
+
+        <input type="radio" name="tshirt" id="small" value="smallTshirt">
+        <label for="small">Small size</label>
+        <br>
+        <input type="radio" name="tshirt" id="medium" value="mediumTshirt">
+        <label for="medium">Medium size</label>
+        <br>
+        <input type="radio" name="tshirt" id="large" value="largeTshirt">
+        <label for="large">Large size</label>
+<!-- http://127.0.0.1:3000/index.html?firstName=SATEESH&lastName=BAPANAPALLI&tshirt=largeTshirt -->
+
+        <br><br>
+
+
+        <label for="color">Your favorite color:</label>
+        <br>
+        <input type="color" id="color">
+        
+
+        <br><br>
+
+
+        <label for="cars">Choose a Car</label>
+        <br>
+        <select name="car" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>  
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+
+
+        <br><br>
+
+
+        <label for="aboutYourSelf">Tell us about yourself</label>
+        <br>
+        <textarea name="aboutYourSelf" id="aboutYourSelf" cols="30" rows="10"></textarea>
+
+
+        <br><br>
+
+
+        <input type="submit">   <!--When we click on submit, first validation will be done & then go for action. The url will be changed like after the file name >>>   ?nameAttributeValue=valueAttributeValue (by default it is 'on' if value not provided.)  -->
+        <input type="reset">
+
+    </form>       
+</body>
+</html>
